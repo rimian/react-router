@@ -4911,6 +4911,7 @@ function testDomRouter(
           ],
           {
             window: getWindow("/"),
+            hydrationData: { loaderData: { "0": null } },
           }
         );
         let { container } = render(<RouterProvider router={router} />);
